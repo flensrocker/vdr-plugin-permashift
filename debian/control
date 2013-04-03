@@ -1,0 +1,23 @@
+Source: vdr-plugin-permashift
+Section: video
+Priority: extra
+Maintainer: Lars Hanisch <dvb@flensrocker.de>
+Build-Depends: debhelper (>= 8), vdr-dev (>= 1.7.27), pkg-config
+Standards-Version: 3.9.1
+Homepage: http://ein-eike.de/vdr-plugin-permashift/
+
+Package: vdr-plugin-permashift
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${vdr:Depends}
+Description: A VDR plugin, adds livebuffer to vdr
+ This VDR-plugin will add a livebuffer to vdr
+
+Package: vdr-plugin-permashift-dbg
+Architecture: any
+Section: debug
+Priority: extra
+Depends: vdr-plugin-permashift (= ${binary:Version}), ${misc:Depends}
+Description: debugging symbols for vdr-plugin-permashift
+ .
+ This package contains only the debugging symbols for vdr-plugin-permashift 
+
